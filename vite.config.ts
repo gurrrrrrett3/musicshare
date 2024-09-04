@@ -1,6 +1,4 @@
 import { defineConfig } from "vite";
-import fs from "fs";
-import path from "path";
 
 export default defineConfig({
     root: "client",
@@ -11,7 +9,7 @@ export default defineConfig({
         emptyOutDir: true,
         sourcemap: true,
         rollupOptions: {
-            input: "index.html",
+            input: "client/index.html",
             output: {
                 entryFileNames: "[name].js",
                 chunkFileNames: "[name].js",
