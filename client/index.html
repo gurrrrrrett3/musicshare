@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./src/index.ts" type="module"></script>
+    <script src="./src/search.ts" type="module"></script>
+
+
+    <title>musicshare | the best way to share music</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left">
+        <img src="assets/icon.webp" alt="musicshare logo" />
+        <h1>musicshare</h1>
+      </div>
+
+      <div class="right">
+        <button class="btn" id="platforms">Platforms</button>
+        <button class="btn" id="about">About</button>
+        <a class="btn" href="https://github.com/gurrrrrrett3/musicshare" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="center">
+        <input
+          class="input"
+          type="text"
+          id="query"
+          placeholder="Enter a song URL"
+          autocomplete="off"
+        />
+        <div class="below">
+          <div class="left" id="icons">
+          
+
+        </div>
+        <div class="right">
+          <button class="btn-light" id="convert">Convert!</button>
+          </div>
+      </div>
+
+      </div>
+      <div class="preview" id="preview">
+        <div class="colorbar" id="colorbar"></div>
+        <div class="info" id="info">
+          <h2 id="title">Title</h2>
+          <h3><span class="label">by</span> <span id="artist"></span></h3>
+          <h3><span class="label">on</span> <span id="album"></span></h3>  
+      </div>
+    </div>
+  </body>
+</html>
