@@ -5,17 +5,11 @@ export default defineConfig({
     build: {
         target: "esnext",
         outDir: "../dist/client",
-        assetsDir: "/_",
+        assetsDir: "_",
         emptyOutDir: true,
         sourcemap: true,
         rollupOptions: {
             input: "client/index.html",
-            output: {
-                entryFileNames: "[name].js",
-                chunkFileNames: "[name].js",
-                assetFileNames: "[name].[ext]",
-                sourcemapFileNames: "[name].js.map",
-            },
         }
     },
     server: {
