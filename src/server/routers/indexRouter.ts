@@ -7,7 +7,7 @@ const router = Router();
 router.use("/api", ApiRouter);
 
 router.get("/", (req, res) => {
-    res.sendFile(path.resolve("./dist/client/pages/index.html"));
+    res.sendFile(path.resolve("./dist/client/index.html"));
 })
 
 export default router;
