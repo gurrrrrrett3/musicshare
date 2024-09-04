@@ -19,7 +19,7 @@ export default class Server {
         this.app.use(express.json());
         this.app.use(express.urlencoded({ extended: true }));
         this.app.use(IndexRouter);
-        this.app.use("/_", express.static(path.resolve("./dist/client")))
+        this.app.use("/_", express.static(path.resolve("./dist/client/_")))
 
         this.server.listen(this.PORT, () => {
             this.logger.info(`Server is running on port ${this.PORT}`);
